@@ -16,7 +16,7 @@ export const FullPost = () => {
 
 
   const defaultImage = 'https://cdn.pellerex.com/public/ecosystem/web/content/identity/react-identity-check/react-redux.png';
-  const baseURL = "http://localhost:3030";
+  const baseURL = process.env.REACT_APP_API_URL;
 
   useEffect(() => {
     getData();

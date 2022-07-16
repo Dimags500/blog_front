@@ -30,7 +30,7 @@ export const AddPost = () => {
   const inputImageRef = useRef(null);
 
 
-  const baseURL = "http://localhost:3030";
+  const baseURL = process.env.REACT_APP_API_URL;
   const defaultImage = 'https://cdn.pellerex.com/public/ecosystem/web/content/identity/react-identity-check/react-redux.png';
 
 
